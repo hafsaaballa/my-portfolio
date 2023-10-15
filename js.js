@@ -1,6 +1,6 @@
-const burger = document.querySelector('.menu');
-const burgerIcon = document.querySelector('.menu i');
-const navber = document.querySelector('.navbar')
+const menu = document.querySelector('.menu');
+const menuIcon = document.querySelector('.menu i');
+const navbar = document.querySelector('.navbar')
 
 const navberLink = document.querySelectorAll('nav a');
 
@@ -9,15 +9,15 @@ navberLink.onclick = function (){
 }
 
 
-burger.onclick = function(){
-   navber.classList.toggle('active')
-   burgerIcon.classList.toggle('fa-xmark')
+menu.onclick = function(){
+   navbar.classList.toggle('active')
+   menuIcon.classList.toggle('fa-xmark')
 }
 
 
 window.onscroll = ()=>{
-    navber.classList.remove('active')
-    burgerIcon.classList.remove('fa-xmark')
+    navbar.classList.remove('active')
+    menuIcon.classList.remove('fa-xmark')
 
 }
 
