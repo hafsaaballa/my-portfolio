@@ -494,3 +494,82 @@ width: 450px;
 
 
 }
+
+
+@media (max-width: 515px){
+
+.about{
+    width: 400px;
+}
+
+.about-text p{
+width: 300px;
+}
+
+.skills{
+    margin-left: -15px;
+}
+
+}
+
+
+@media (max-width: 460px){
+
+.home-text p{
+    width: 350px;
+    text-align: center;
+    margin-right: 60px;
+}
+
+
+    .about{
+        width: 350px;
+    }
+
+.skill{
+    width: 400px;
+}
+
+.skills{
+  gap: 50px;
+  margin-left: -15px;
+
+}
+
+}
+
+
+@media (max-width: 420px){
+
+.home-text h1{
+    font-size: 30px;
+}
+
+
+.home-text p{
+  width: 400px;
+  margin-right: 15px;
+}
+
+    .about{
+        margin-left: 10px;
+    }
+
+
+    .skill{
+        height:100%;
+       
+    }
+
+
+    .skills{
+        display: grid;
+        grid-template-columns: 150px ;
+        gap: 50px;
+        
+    margin-left: 35px;
+        animation: bounce infinite 5s;
+    }
+
+
+}
