@@ -4,6 +4,8 @@
 }
 
 
+
+
 .header{
     position: fixed;
     width: 100%;
@@ -19,6 +21,15 @@
 margin-top: 18px;
     font-size: 25px;
 }
+
+.menu i{
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+}
+
+
+
 
 .navbar{
    
@@ -38,6 +49,9 @@ a{
 
 }       
 
+html{
+    scroll-behavior: smooth;
+   }
 
 .home{
     color: white;
@@ -364,4 +378,119 @@ color: white;
 
 .footer-text span{
     color:  rgb(232, 187, 99);
+}
+
+
+@media (max-width: 600px){
+
+    .menu i{
+        display: block;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .navbar{
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        height: 500px;
+        width: 30%;
+        padding: 1rem 3%;
+       background-color:  rgb(66, 21, 96);;
+        /* border-top: .1rem solid rgba(0 , 0 , 0 , .2); */
+        
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 1.2em;
+        margin: 2rem 0;
+    }
+    .active{
+        display: block;
+    }
+
+
+
+    .home{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       height: 950px;
+        
+    }
+
+    .home-text{
+
+        padding-top: -30px;
+
+    }
+
+    .home-image{
+       
+        border-radius: 50%;
+        width: 400px;
+        height: 450px;
+        margin: 0 auto;
+        background-size: 300px;
+    
+    }
+    .home-text p{
+width: 450px;
+        text-align: center;
+        margin-left: 70px;
+
+    }
+    
+
+    .about{
+        display: block;
+        justify-content: center;
+        height: 600px;
+        /* font-size: 1rem; */
+    }
+
+    .about-image{
+
+       
+       margin-left: 60px;
+    }
+    
+    .about-image img{
+        margin-top: 10px;
+        width: 300px;
+        height: 250px;
+    }
+
+    .about-text{
+        width: 450px;
+        margin-top: 1px;
+        margin-top: 20px;
+    }
+
+    .skill{
+   
+        padding-left: 25px;
+        background-color: rgb(66, 21, 96);;
+        height: 950px;
+        width: 97%;
+        color: white;
+        
+        }
+        
+        
+        .skills{
+            display: grid;
+            grid-template-columns: 150px 150px  ;
+            gap: 80px;
+            
+        margin-left: 35px;
+            animation: bounce infinite 5s;
+        }
+
+
+
+
 }
